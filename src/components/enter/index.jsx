@@ -41,10 +41,11 @@ function Enter({ setEnter }) {
         exit={{ opacity: 0 }}
         className="enter-background"
       ></motion.div>
+      <div className="enter-loader">{Math.round((loadingProgress * 100) / sources.length)}%</div>
       {loadingProgress !== sources.length ? (
-        <div className="loader">{loadingProgress}</div>
+        <></>
       ) : (
-        <>
+        <div className="enter-column-container">
           <Column
             images={[
               "/images/01.jpeg",
@@ -77,7 +78,7 @@ function Enter({ setEnter }) {
             ]}
             className="right"
           />
-        </>
+        </div>
       )}
     </motion.div>
   );

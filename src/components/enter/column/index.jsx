@@ -2,12 +2,14 @@ import { motion } from "framer-motion";
 import "./style.scss";
 import { textEase } from "../../../helpers/ease-helper";
 
+const mainImage = "/images/5.jpg";
+
 function Image({ image }) {
   const { innerWidth, innerHeight } = window;
 
   return (
     <>
-      {image === "/images/5.jpg" && (
+      {image === mainImage && (
         <motion.img
           layoutId="enter-image"
           style={{ aspectRatio: `${innerWidth} / ${innerHeight}` }}
@@ -18,7 +20,7 @@ function Image({ image }) {
           }}
         />
       )}
-      {image !== "/images/5.jpg" && (
+      {image !== mainImage && (
         <motion.img
           exit={{ opacity: 0 }}
           transition={{ duration: 0.4 }}
