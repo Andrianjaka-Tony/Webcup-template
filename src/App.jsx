@@ -1,19 +1,20 @@
-import { useState } from "react";
-import Enter from "./components/enter";
-import Hero from "./components/hero";
 import { AnimatePresence } from "framer-motion";
+import { Route, Routes, useLocation } from "react-router-dom";
+import Home from "./pages/home";
+import Hello from "./pages/hello";
 
 function App() {
-  const [isEnter, setEnter] = useState(true);
+  const location = useLocation();
 
   return (
     <>
       <AnimatePresence mode="wait">
-        {isEnter && <Enter key="enter" setEnter={setEnter} />}
-        {!isEnter && <Hero key="hero" />}
+        <Routes location={location} key={location.pathname}>
+          <Route element={<Home />} path="/" />
+          <Route element={<Hello />} path="/hello" />
+          <Route element={<Hello />} path="/hello-2" />
+        </Routes>
       </AnimatePresence>
-      <div style={{ height: "100vh" }}></div>
-      <div style={{ height: "100vh" }}></div>
     </>
   );
 }
