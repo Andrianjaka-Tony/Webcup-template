@@ -4,19 +4,29 @@ import Enter from "../../components/enter";
 import Hero from "../../components/hero";
 import Footer from "../../components/footer";
 import Transition from "../../components/transition";
+import useScrollToTop from "../../hooks/useScrollToTop";
+import MemberSection from "../../components/member-section";
 
 function Home() {
   const [isEnter, setEnter] = useState(true);
 
+  useScrollToTop();
+
   return (
-    <Transition>
+    <>
+      <Transition />
       <AnimatePresence mode="wait">
-        {isEnter && <Enter key="enter" setEnter={setEnter} />}
+        {isEnter && (
+          <>
+            <Enter key="enter" setEnter={setEnter} />
+            <div style={{ height: "100vh" }}></div>
+          </>
+        )}
         {!isEnter && <Hero key="hero" />}
       </AnimatePresence>
-      <div style={{ height: "100vh" }}></div>
+      <MemberSection />
       <Footer />
-    </Transition>
+    </>
   );
 }
 

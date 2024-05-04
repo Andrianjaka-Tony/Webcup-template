@@ -1,3 +1,5 @@
+import { textEase } from "../../../helpers/ease-helper";
+
 export const sidebarVariants = {
   initial: {
     clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0 100%)",
@@ -5,7 +7,7 @@ export const sidebarVariants = {
   animate: {
     clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
     transition: {
-      ease: [1, 0.05, 0.68, 0.07],
+      ease: textEase,
       duration: 1,
     },
   },

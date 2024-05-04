@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <Navigation />
-      <AnimatePresence mode="wait">
+      <AnimatePresence initial={false} mode="wait">
         <Routes location={location} key={location.pathname}>
           <Route element={<Home />} path="/" />
           <Route element={<Hello />} path="/hello" />

@@ -1,1 +1,1 @@
-export const textEase = [0.05, 0.75, 0.19, 0.98];
+export const textEase = [0.34, 0.63, 0, 0.99];
