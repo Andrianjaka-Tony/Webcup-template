@@ -14,7 +14,7 @@ export function Lighter(props) {
   const { nodes, materials } = useGLTF("/models/lighter/scene.gltf");
 
   return (
-    <group {...props} dispose={null}>
+    <group {...props} scale={[0.1, 0.1, 0.1]} dispose={null}>
       <group position={[6, 14, -3]}>
         <group position={[-6, -1, 3]}>
           <mesh geometry={nodes.Object_26.geometry} material={materials["lighter_textures.png"]} />

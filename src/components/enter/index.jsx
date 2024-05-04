@@ -33,6 +33,14 @@ function Enter({ setEnter }) {
     "/partners/9.png",
     "/partners/10.webp",
     "/partners/11.png",
+    "/gadgets/1.jpeg",
+    "/gadgets/2.jpeg",
+    "/gadgets/3.jpeg",
+    "/gadgets/4.jpeg",
+    "/gadgets/5.jpeg",
+    "/gadgets/6.jpeg",
+    "/gadgets/7.jpeg",
+    "/gadgets/8.jpeg",
   ];
 
   const [loadingProgress, setLoadingProgress] = useState(0);
