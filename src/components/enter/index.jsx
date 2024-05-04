@@ -6,12 +6,33 @@ import "./style.scss";
 
 function Enter({ setEnter }) {
   const sources = [
-    "/images/01.jpeg",
-    "/images/02.jpeg",
-    "/images/03.jpeg",
-    "/images/04.jpeg",
-    "/images/05.jpeg",
-    "/images/5.jpg",
+    "/images/1.jpeg",
+    "/images/2.jpeg",
+    "/images/3.jpeg",
+    "/images/4.jpeg",
+    "/images/5.jpeg",
+    "/images/6.jpeg",
+    "/images/7.jpeg",
+    "/images/8.jpeg",
+    "/images/9.jpeg",
+    "/images/10.jpeg",
+    "/images/11.jpeg",
+    "/images/12.jpeg",
+    "/images/13.jpeg",
+    "/images/14.jpeg",
+    "/images/15.jpeg",
+    "/images/16.jpeg",
+    "/partners/1.webp",
+    "/partners/2.webp",
+    "/partners/3.webp",
+    "/partners/4.webp",
+    "/partners/5.webp",
+    "/partners/6.webp",
+    "/partners/7.webp",
+    "/partners/8.webp",
+    "/partners/9.png",
+    "/partners/10.webp",
+    "/partners/11.png",
   ];
 
   const [loadingProgress, setLoadingProgress] = useState(0);
@@ -48,33 +69,32 @@ function Enter({ setEnter }) {
         <div className="enter-column-container">
           <Column
             images={[
-              "/images/01.jpeg",
-              "/images/02.jpeg",
-              "/images/03.jpeg",
-              "/images/04.jpeg",
-              "/images/05.jpeg",
-              "/images/01.jpeg",
+              "/images/2.jpeg",
+              "/images/3.jpeg",
+              "/images/4.jpeg",
+              "/images/5.jpeg",
+              "/images/6.jpeg",
+              "/images/7.jpeg",
             ]}
             className="left"
           />
           <Column
             images={[
-              "/images/01.jpeg",
-              "/images/02.jpeg",
-              "/images/5.jpg",
-              "/images/04.jpeg",
-              "/images/05.jpeg",
+              "/images/8.jpeg",
+              "/images/9.jpeg",
+              "/images/1.jpeg",
+              "/images/10.jpeg",
+              "/images/11.jpeg",
             ]}
             className="middle"
           />
           <Column
             images={[
-              "/images/01.jpeg",
-              "/images/02.jpeg",
-              "/images/03.jpeg",
-              "/images/04.jpeg",
-              "/images/05.jpeg",
-              "/images/01.jpeg",
+              "/images/12.jpeg",
+              "/images/13.jpeg",
+              "/images/14.jpeg",
+              "/images/15.jpeg",
+              "/images/16.jpeg",
             ]}
             className="right"
           />

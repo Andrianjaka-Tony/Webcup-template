@@ -42,7 +42,7 @@ function Footer() {
       <div className="footer-bottom">
         <div className="footer-bottom-content">
           <p className="footer-bottom-content-text-left">2024</p>
-          <p className="footer-bottom-content-text-left">Onirix</p>
+          <p className="footer-bottom-content-text-left">Motion Agent</p>
         </div>
         <div className="footer-bottom-content">
           <p className="footer-bottom-content-right">GMT +3</p>

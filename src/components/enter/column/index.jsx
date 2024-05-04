@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import "./style.scss";
 import { textEase } from "../../../helpers/ease-helper";
 
-const mainImage = "/images/5.jpg";
+const mainImage = "/images/1.jpeg";
 
 function Image({ image }) {
   const { innerWidth, innerHeight } = window;

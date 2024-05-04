@@ -20,14 +20,14 @@ export const cellVariants = () => ({
     scale: 0,
     transition: {
       delay: Math.random() * 0.5 + (20 - custom) * 0.02,
-      duration: 0.1,
+      duration: 0,
     },
   }),
   exit: (custom) => ({
     scale: 1,
     transition: {
       delay: Math.random() * 0.5 + custom * 0.02,
-      duration: 0.1,
+      duration: 0,
     },
   }),
 });

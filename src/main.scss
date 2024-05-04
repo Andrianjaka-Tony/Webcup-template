@@ -1,3 +1,7 @@
+:root {
+  --theme: #eb5939;
+}
+
 *,
 *::before,
 *::after {
@@ -13,6 +17,8 @@
 
 body {
   overflow-x: hidden;
+  background: #111;
+  color: #fff;
 }
 
 @font-face {

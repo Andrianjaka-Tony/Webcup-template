@@ -10,13 +10,13 @@ function Hero() {
     <section className="hero">
       <h1 className="hero-title">
         <div className="hero-title-content">
-          <TextAnime duration={2} text="future" delay={0.6} />
+          <TextAnime duration={2} text="advanced" delay={0.6} />
         </div>
         <div className="hero-title-content middle">
-          <TextAnime duration={2} text="prediction" delay={0.8} />
+          <TextAnime duration={2} text="connected" delay={0.8} />
         </div>
         <div className="hero-title-content bottom">
-          <TextAnime duration={2} text="dream" delay={1} />
+          <TextAnime duration={2} text="immersive" delay={1} />
         </div>
       </h1>
       <div className="hero-text">
@@ -31,7 +31,7 @@ function Hero() {
           ease: textEase,
         }}
         layoutId="enter-image"
-        src="/images/5.jpg"
+        src="/images/1.jpeg"
         className="hero-image"
         style={{ aspectRatio: `${innerWidth} / ${innerHeight}` }}
         alt=""

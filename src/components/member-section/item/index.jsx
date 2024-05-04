@@ -2,17 +2,7 @@ import { motion, useMotionValueEvent, useTransform } from "framer-motion";
 import "./style.scss";
 import { useState } from "react";
 
-function Item({
-  name,
-  post,
-  description,
-  image,
-  progress,
-  begin,
-  end,
-  background = "#fff",
-  animated = true,
-}) {
+function Item({ name, post, image, progress, begin, end, animated = true }) {
   const [clips, setClips] = useState(["50%", "50%", "100%"]);
 
   const x1 = useTransform(progress, [begin, end], ["20%", "0%"]);
@@ -35,13 +25,12 @@ function Item({
         clipPath: animated
           ? `polygon(0% ${clips[2]}, 100% ${clips[2]}, 100% 100%, 0% 100%)`
           : "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-        background,
       }}
       className="member-section-item"
     >
-      <div className="member-section-item-name">{name}</div>
+      <div className="member-section-item-name">Membre</div>
       <div className="member-section-item-bottom">
-        <div className="post">{post}</div>
+        <div className="post">{name}</div>
         <img
           style={{
             clipPath: animated
@@ -52,7 +41,7 @@ function Item({
           alt=""
           className="image"
         />
-        <div className="description">{description}</div>
+        <div className="description">{post}</div>
       </div>
     </motion.div>
   );

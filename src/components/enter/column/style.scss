@@ -3,13 +3,13 @@
   flex-direction: column;
   align-items: flex-start;
   width: 33%;
-  animation-timing-function: cubic-bezier(0.05, 0.75, 0.19, 0.98);
+  animation-timing-function: cubic-bezier(0.34, 0.63, 0, 0.99);
 
-  // &.left {
-  //   transform: translateY(-400%);
-  //   gap: 500px;
-  //   animation: column-left 3000ms forwards;
-  // }
+  &.left {
+    transform: translateY(-200%);
+    gap: 500px;
+    animation: column-left 4000ms forwards;
+  }
 
   &.middle {
     transform: translateY(200%);
@@ -17,8 +17,7 @@
     animation: column-middle 3500ms forwards;
   }
 
-  &.right,
-  &.left {
+  &.right {
     transform: translateY(-300%);
     gap: 200px;
     animation: column-right 3000ms 500ms forwards;
@@ -46,7 +45,7 @@
     gap: 500px;
   }
   100% {
-    transform: translateY(-20%);
+    transform: translateY(10%);
     gap: 30px;
   }
 }
@@ -66,7 +65,7 @@
     gap: 200px;
   }
   100% {
-    transform: translateY(20%);
+    transform: translateY(10%);
     gap: 30px;
   }
 }

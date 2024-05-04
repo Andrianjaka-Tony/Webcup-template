@@ -1,6 +1,8 @@
 .hero {
   width: 100vw;
   padding: 5vw 3vw;
+  background: #111;
+  color: white;
 
   .hero-title {
     position: relative;
@@ -15,10 +17,12 @@
     .hero-title-content {
       width: 100%;
       display: flex;
+      opacity: 0.8;
 
       &.middle {
         justify-content: center;
         margin-top: calc(-0.2 * 15vw);
+        color: var(--theme);
       }
 
       &.bottom {
@@ -32,9 +36,10 @@
     position: absolute;
     top: 0;
     right: 0;
-    margin: 13vw 10vw 0 0;
+    margin: 13vw 4vw 0 0;
     font-size: 1.2vw;
     width: 22vw;
+    opacity: 0.7;
 
     .text-anime .text-anime-word {
       margin-right: 0.3vw;

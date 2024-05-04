@@ -47,11 +47,10 @@ export default function XGallery() {
     <motion.section className={styles.gallery} ref={sectionRef}>
       <motion.div className={styles.sticky}>
         <h1 className={styles.title}>Hello From X Gallery</h1>
-        <div className={styles.text}>As you can see, you should scroll Y to see the progession of X.</div>
+        <div className={styles.text}>
+          As you can see, you should scroll Y to see the progession of X.
+        </div>
         <motion.div style={{ x, left }} className={styles.container}>
-          {images.map(({ src }, index) => (
-            <Image src={src} key={index} />
-          ))}
           {images.map(({ src }, index) => (
             <Image src={src} key={index} />
           ))}

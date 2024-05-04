@@ -13,9 +13,9 @@ const variants = {
   },
 };
 
-function SidebarItem({ name, link }) {
+function SidebarItem({ name, link, setSidebarOpen }) {
   return (
-    <motion.div variants={variants} className="sidebar-item">
+    <motion.div onClick={() => setSidebarOpen(false)} variants={variants} className="sidebar-item">
       <NavLink to={link}>{name}</NavLink>
     </motion.div>
   );

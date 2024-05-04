@@ -6,6 +6,8 @@ import Footer from "../../components/footer";
 import Transition from "../../components/transition";
 import useScrollToTop from "../../hooks/useScrollToTop";
 import MemberSection from "../../components/member-section";
+import Testimonials from "../../components/testimonials";
+import Partners from "../../components/partners";
 
 function Home() {
   const [isEnter, setEnter] = useState(true);
@@ -24,6 +26,8 @@ function Home() {
         )}
         {!isEnter && <Hero key="hero" />}
       </AnimatePresence>
+      <Testimonials />
+      <Partners />
       <MemberSection />
       <Footer />
     </>

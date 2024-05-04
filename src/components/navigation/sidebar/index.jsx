@@ -7,8 +7,8 @@ import { itemsVariants, linkVariants, linksVariants, sidebarVariants } from "./a
 
 const items = [
   {
-    name: "Projects",
-    link: "/projects",
+    name: "Gadgets",
+    link: "/gadgets",
   },
   {
     name: "Expertise",
@@ -39,7 +39,7 @@ function Sidebar({ setSidebarOpen }) {
       <div className="sidebar-content">
         <motion.div variants={itemsVariants} className="sidebar-items">
           {items.map((item) => (
-            <SidebarItem {...item} key={item.link} />
+            <SidebarItem setSidebarOpen={setSidebarOpen} {...item} key={item.link} />
           ))}
         </motion.div>
         <motion.div variants={linksVariants} className="sidebar-links">
@@ -69,7 +69,7 @@ function Sidebar({ setSidebarOpen }) {
         </motion.div>
       </div>
       <div className="sidebar-bottom">
-        <img src="/images/01.jpeg" className="sidebar-bottom-image" />
+        <img src="/images/8.jpeg" className="sidebar-bottom-image" />
         <div className="sidebar-bottom-content">Motion</div>
         <div className="sidebar-bottom-content">2024</div>
       </div>
